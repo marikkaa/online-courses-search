@@ -71,7 +71,6 @@ function filterCards() {
     a = 0;
     b = 100;
   }
-
   for (let i = 0; i < cards.length; i++) {
     if (
       cards[i].children[4].innerText.toUpperCase().indexOf(catVal) > -1 &&
