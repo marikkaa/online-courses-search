@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">ACADEMIA</div>
+        <div class="menu" id="menu">
+          <div class="menu-link-dropdown">
+            <a href="#" class="menu-link">
+              <div class="link-content">
+                Courses & Programs
+                <img
+                  src="./img/arrow-down.png"
+                  alt="arrow down"
+                  class="arrow-down"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-link">Science</div>
+            <div class="dropdown-link">Technology</div>
+            <div class="dropdown-link">Humanities</div>
+            <div class="dropdown-link">Degree Programs</div>
+          </div>
+          <a href="#" class="menu-link">Updates</a>
+          <a href="#" class="menu-link">Resources</a>
+          <a href="#" class="menu-link">About Us</a>
+        </div>
+        <div class="navbar-buttons">
+          <button class="responsive-menu" id="responsive-menu"></button>
+          <button class="login button">Log In</button>
+          <button class="signup button">Sign Up</button>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-img">
+          <h1 class="hero-title">
+            Explore Online Courses <br />
+            To Build New Skills
+          </h1>
+          <div class="hero-input">
+            <img src="./img/search-icon.png" alt="" class="search-icon" />
+            <input
+              type="text"
+              class="search-input"
+              id="name-input"
+              placeholder="Enter course or program name"
+            />
+            <button class="search-button button" id="search-name">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="courses-section">
+        <div class="filter-menu">
+          <h2 class="filter-title" class="filter-title">Popular courses</h2>
+          <div class="filter-options">
+            <div class="select-container">
+              <input
+                type="text"
+                class="select-input"
+                placeholder="Categories"
+                id="category-filter"
+                readonly
+              />
+              <div class="select-options">
+                <div class="option">Science</div>
+                <div class="option">Humanities</div>
+                <div class="option">Technology</div>
+              </div>
+            </div>
+            <div class="select-container">
+              <input
+                type="text"
+                class="select-input"
+                placeholder="Level"
+                id="level-filter"
+                readonly
+              />
+              <div class="select-options">
+                <div class="option">Introductory</div>
+                <div class="option">Intermediate</div>
+                <div class="option">Advanced</div>
+              </div>
+            </div>
+            <div class="select-container">
+              <input
+                type="text"
+                class="select-input"
+                placeholder="Length"
+                id="length-filter"
+                readonly
+              />
+              <div class="select-options">
+                <div class="option">1-4 weeks</div>
+                <div class="option">4+ weeks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="courses-cards" id="courses-cards">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-01"></div>
+              <div class="card-course-name">
+                Principles of <br />
+                Biochemistry
+              </div>
+              <div class="card-course-level">Intermediate</div>
+              <div class="card-course-length">
+                <div class="weeks">8</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-02"></div>
+              <div class="card-course-name">Solar System</div>
+              <div class="card-course-level">Introductory</div>
+              <div class="card-course-length">
+                <div class="weeks">2</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-03"></div>
+              <div class="card-course-name">Nuclear Energy</div>
+              <div class="card-course-level">Advanced</div>
+              <div class="card-course-length">
+                <div class="weeks">12</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-04"></div>
+              <div class="card-course-name">Cyber Security</div>
+              <div class="card-course-level">Intermediate</div>
+              <div class="card-course-length">
+                <div class="weeks">10</div>
+                weeks
+              </div>
+              <div class="card-course-category">Technology</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-05"></div>
+              <div class="card-course-name">Creative Writing</div>
+              <div class="card-course-level">Introductory</div>
+              <div class="card-course-length">
+                <div class="weeks">3</div>
+                weeks
+              </div>
+              <div class="card-course-category">Humanities</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-06"></div>
+              <div class="card-course-name">Thermodynamics</div>
+              <div class="card-course-level">Advanced</div>
+              <div class="card-course-length">
+                <div class="weeks">7</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-07"></div>
+              <div class="card-course-name">
+                Quantitative Methods <br />
+                For Biology
+              </div>
+              <div class="card-course-level">Intermediate</div>
+              <div class="card-course-length">
+                <div class="weeks">5</div>
+                weeks
+              </div>
+              <div class="card-course-category">Technology</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-08"></div>
+              <div class="card-course-name">
+                Introduction to <br />
+                Exoplanets
+              </div>
+              <div class="card-course-level">Introductory</div>
+              <div class="card-course-length">
+                <div class="weeks">4</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-09"></div>
+              <div class="card-course-name">Classical Latin</div>
+              <div class="card-course-level">Introductory</div>
+              <div class="card-course-length">
+                <div class="weeks">5</div>
+                weeks
+              </div>
+              <div class="card-course-category">Humanities</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-10"></div>
+              <div class="card-course-name">Ancient Greek</div>
+              <div class="card-course-level">Advanced</div>
+              <div class="card-course-length">
+                <div class="weeks">10</div>
+                weeks
+              </div>
+              <div class="card-course-category">Humanities</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-11"></div>
+              <div class="card-course-name">Microbiology</div>
+              <div class="card-course-level">Intermediate</div>
+              <div class="card-course-length">
+                <div class="weeks">3</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-13"></div>
+              <div class="card-course-name">
+                Introduction to<br />
+                Astrophysics
+              </div>
+              <div class="card-course-level">Advanced</div>
+              <div class="card-course-length">
+                <div class="weeks">4</div>
+                weeks
+              </div>
+              <div class="card-course-category">Science</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-14"></div>
+              <div class="card-course-name">
+                Artificial<br />
+                Intelligence
+              </div>
+              <div class="card-course-level">Advanced</div>
+              <div class="card-course-length">
+                <div class="weeks">10</div>
+                weeks
+              </div>
+              <div class="card-course-category">Technology</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-15"></div>
+              <div class="card-course-name">
+                Architecture & <br />
+                Design
+              </div>
+              <div class="card-course-level">Intermediate</div>
+              <div class="card-course-length">
+                <div class="weeks">3</div>
+                weeks
+              </div>
+              <div class="card-course-category">Humanities</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-course-image course-image-04"></div>
+              <div class="card-course-name">Cyber Security</div>
+              <div class="card-course-level">Introductory</div>
+              <div class="card-course-length">
+                <div class="weeks">4</div>
+                weeks
+              </div>
+              <div class="card-course-category">Technology</div>
+              <div class="card-course-icons">
+                <div class="circle-icon-one circle-icon"></div>
+                <div class="circle-icon-two circle-icon"></div>
+                <div class="circle-icon-three circle-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="no-result" id="no-result">No results found</div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-logo">ACADEMIA</div>
+        <div class="footer-text">
+          Ipsam impedit autem veritatis inventore possimus amet sed provident.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
