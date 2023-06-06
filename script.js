@@ -132,5 +132,3 @@ const menu = document.getElementById("menu");
 resMenuBtn.addEventListener("click", () => {
   menu.classList.toggle("menu-responsive");
 });
-
-// Show no result
